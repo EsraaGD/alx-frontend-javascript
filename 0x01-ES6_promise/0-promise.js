@@ -1,6 +1,14 @@
-
-export default function getResponseFromAPI() {
+function getResponseFromAPI() {
   return new Promise((resolve, reject) => {
-    resolve("API response");
-    });
+    // API call logic here
+    // ...
+    if (responseFromAPI) {
+      resolve(responseFromAPI); // resolve with API response
+    } else {
+      reject("Error: API call failed"); // reject with error message
+    }
+  });
 }
+
+export default getResponseFromAPI;
+
